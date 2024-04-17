@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MHNowストーリー早見表</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $(function() {
+     $("#accordion").accordion();
+  });
+  </script>
+  <style>
+    html {
+      font-family: "Kaisei Opti", serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 1.6vw;
+      background-color: ghostwhite;
+    }
+    h1 {
+      background-color: coral;
+      padding: .7rem;
+      font-weight: bolder;
+      font-size: 3rem;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid darkslategrey 3px;
+      border-radius: 7px;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: span 5;
+    }
+    img {
+      border: none;
+    }
+    #monster-table {
+      display: grid;
+      /* grid-template-columns: 102px 102px 102px 102px 102px; */
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
+    }
+    .monster-info {
+      display: flex;
+      flex-direction: column;
+      border: solid burlywood 1px;
+    }
+    .monster-icon {
+      /* width: 100px;
+      height: 100px; */
+      width: 100%;
+      height: 100%;
+    }
+    .monster-icon > img {
+      width: 100%;
+      height: 100%;
+      background-color: #f5e7ce;
+    }
+    .monster-eco {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    .monster-biome, .monster-weak {
+      display: flex;
+      flex-direction: row;
+      border: solid burlywood 1px;
+      height: 2rem;
+    }
+    .monster-biome {
+      border-right: solid linen 1px;
+    }
+    .monster-weak {
+      justify-content: flex-end;
+      border-left: solid linen 1px;
+    }
+    .monster-biome > img, .monster-weak > img {
+      width: 2rem;
+      height: 2rem;
+    }
+    .monster-rare6-drop {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: maroon;
+      padding: 2px;
+      height: 2rem;
+    }
+    .guide {
+      color: maroon;
+      border: none;
+      font-size: 1.2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>MHNowストーリー早見表</h1>
+  <div id="accordion">
+    <h3>チャプター１</h3>
+    <h3>チャプター２</h3>
+    <h3>チャプター３</h3>
+    <h3>チャプター４</h3>
+    <h3>チャプター５</h3>
+    <h3>チャプター６</h3>
+    <h3>チャプター７</h3>
+    <h3>チャプター８</h3>
+    <h3>チャプター９</h3>
+    <h3>チャプター１０</h3>
+    <h3>チャプター１１</h3>
+  </div>
+</body>
+</html>
