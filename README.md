@@ -6,4 +6,4 @@
 
 ## 使い方
 
-https://minovski.github.io/mhnow_story_list/にテキトーなブラウザでアクセスする。
+[https://minovski.github.io/mhnow_story_list/](https://minovski.github.io/mhnow_story_list/)にテキトーなブラウザでアクセスする。

@@ -6,7 +6,9 @@
   <title>MHNowストーリー早見表</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="./index.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
@@ -14,101 +16,73 @@
      $("#accordion").accordion();
   });
   </script>
-  <style>
-    html {
-      font-family: "Kaisei Opti", serif;
-      font-weight: 400;
-      font-style: normal;
-      font-size: 1.6vw;
-      background-color: ghostwhite;
-    }
-    h1 {
-      background-color: coral;
-      padding: .7rem;
-      font-weight: bolder;
-      font-size: 3rem;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: solid darkslategrey 3px;
-      border-radius: 7px;
-      grid-row-start: 1;
-      grid-row-end: 1;
-      grid-column-start: 1;
-      grid-column-end: span 5;
-    }
-    img {
-      border: none;
-    }
-    #monster-table {
-      display: grid;
-      /* grid-template-columns: 102px 102px 102px 102px 102px; */
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr;
-    }
-    .monster-info {
-      display: flex;
-      flex-direction: column;
-      border: solid burlywood 1px;
-    }
-    .monster-icon {
-      /* width: 100px;
-      height: 100px; */
-      width: 100%;
-      height: 100%;
-    }
-    .monster-icon > img {
-      width: 100%;
-      height: 100%;
-      background-color: #f5e7ce;
-    }
-    .monster-eco {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr;
-    }
-    .monster-biome, .monster-weak {
-      display: flex;
-      flex-direction: row;
-      border: solid burlywood 1px;
-      height: 2rem;
-    }
-    .monster-biome {
-      border-right: solid linen 1px;
-    }
-    .monster-weak {
-      justify-content: flex-end;
-      border-left: solid linen 1px;
-    }
-    .monster-biome > img, .monster-weak > img {
-      width: 2rem;
-      height: 2rem;
-    }
-    .monster-rare6-drop {
-      text-align: center;
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: maroon;
-      padding: 2px;
-      height: 2rem;
-    }
-    .guide {
-      color: maroon;
-      border: none;
-      font-size: 1.2rem;
-      font-weight: bold;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
 </head>
 <body>
-  <h1>MHNowストーリー早見表</h1>
+  <h1>春景裂く乱入者：ストーリー早見表</h1>
   <div id="accordion">
-    <h3>チャプター１</h3>
-    <h3>チャプター２</h3>
+    <h3>チャプター1：始まりは閃光と共に</h3>
+      <div class="chapter-list">
+        <div class="chapter-quest">
+          <div class="quest-seq">1</div>
+          <div class="quest-item">
+            <div class="quest-summary">
+              <div class="quest-type quest-emg">緊急</div>
+              <div class="quest-content">ツィツィヤック★(n)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <h3>チャプター2：ヒゲの赴くままに</h3>
+      <div class="chapter-list">
+        <div class="chapter-quest">
+          <div class="quest-seq">1</div>
+          <div class="quest-item">
+            <div class="quest-summary">
+              <div class="quest-type quest-hunt">討伐</div>
+              <div class="quest-content">大型モンスター★(n-1)✕３</div>
+            </div>
+            <div class="quest-summary">
+              <div class="quest-type quest-hunt">討伐</div>
+              <div class="quest-content">モンスター✕１０</div>
+            </div>
+            <div class="quest-summary">
+              <div class="quest-type quest-matl">採集</div>
+              <div class="quest-content">素材✕１０</div>
+            </div>
+          </div>
+        </div>
+        <div class="chapter-quest">
+          <div class="quest-seq">2</div>
+          <div class="quest-item">
+            <div class="quest-summary">
+              <div class="quest-type quest-emg">緊急</div>
+              <div class="quest-content">ドスギルオス★(n)</div>
+            </div>
+          </div>
+        </div>
+        <div class="chapter-quest">
+          <div class="quest-seq">3</div>
+          <div class="quest-item">
+            <div class="quest-summary">
+              <div class="quest-type quest-hunt">討伐</div>
+              <div class="quest-content">大型モンスター✕５</div>
+            </div>
+            <div class="quest-summary">
+              <div class="quest-type quest-matl">採集</div>
+              <div class="quest-content">素材✕１０</div>
+            </div>
+          </div>
+        </div>
+        <div class="chapter-quest">
+          <div class="quest-seq">4</div>
+          <div class="quest-item">
+            <div class="quest-summary">
+              <div class="quest-type quest-emg">緊急</div>
+              <div class="quest-content">トビカガチ★(n)</div>
+            </div>
+          </div>
+        </div>
+      </div>
     <h3>チャプター３</h3>
     <h3>チャプター４</h3>
     <h3>チャプター５</h3>
