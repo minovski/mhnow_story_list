@@ -33,6 +33,9 @@ img {
 .chapter-quest:nth-child(odd) {
   background-color: linen;
 }
+.chapter-quest:nth-child(even) {
+  background-color: bisque;
+}
 .quest-seq {
   display: flex;
   justify-content: center;
