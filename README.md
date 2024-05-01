@@ -21,3 +21,4 @@
 * Emacs（**絶対神**）
 * Vim（地母神）
 * git（地蔵）
+* jQuery・jQuery UI（付喪神）

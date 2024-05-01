@@ -13,9 +13,21 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $(function() {
-     $("#accordion").accordion({
+    const emg = '緊急';
+    const matl = '採集';
+    const hunt = '討伐';
+    $('#accordion').accordion({
       heightStyle: 'content'
-     });
+    });
+    $('.quest-emg').each((idx, elm) => {
+      $(elm).text(emg);
+    });
+    $('.quest-matl').each((idx, elm) => {
+      $(elm).text(matl);
+    });
+    $('.quest-hunt').each((idx, elm) => {
+      $(elm).text(hunt);
+    });
   });
   </script>
 </head>
@@ -28,7 +40,7 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">ツィツィヤック★(n)</div>
           </div>
         </div>
@@ -40,15 +52,15 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター★(n-1)以上✕３</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -57,7 +69,7 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">ドスギルオス★(n)</div>
           </div>
         </div>
@@ -66,11 +78,11 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -79,7 +91,7 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">トビカガチ★(n)</div>
           </div>
         </div>
@@ -91,11 +103,11 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">穴の痕跡（採集）✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -104,15 +116,15 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -121,15 +133,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター★(n-1)以上✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -138,7 +150,7 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">ラドバルキン★(n)</div>
           </div>
         </div>
@@ -150,15 +162,15 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">弱点属性武器でモンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -167,11 +179,11 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">鉱物✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
         </div>
@@ -180,7 +192,7 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">パオウルムー★(n)</div>
           </div>
         </div>
@@ -189,15 +201,15 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -206,7 +218,7 @@
         <div class="quest-seq">5</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">ジュラトドス★(n)</div>
           </div>
         </div>
@@ -218,15 +230,15 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">トビカガチ✕２</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -235,7 +247,7 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">アンジャナフ★(n)</div>
           </div>
         </div>
@@ -244,15 +256,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -261,15 +273,15 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">掘られた痕跡（採集）✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -278,7 +290,7 @@
         <div class="quest-seq">5</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">バフバロ★(n)</div>
           </div>
         </div>
@@ -290,15 +302,15 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター★(n-1)以上✕３</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -307,11 +319,11 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">採集✕１０</div>
           </div>
         </div>
@@ -320,15 +332,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">骨塚✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -337,7 +349,7 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">リオレイア★(n)</div>
           </div>
         </div>
@@ -349,11 +361,11 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">腐敗した欠片（鉱物）✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -362,11 +374,11 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">弱点属性武器でモンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
         </div>
@@ -375,15 +387,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -392,15 +404,15 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">ドスギルオス★5以上✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -409,7 +421,7 @@
         <div class="quest-seq">5</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">オドガロン★(n)</div>
           </div>
         </div>
@@ -421,11 +433,11 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">沼地のモンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -434,7 +446,7 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">レイギエナ★(n)</div>
           </div>
         </div>
@@ -443,15 +455,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">植物✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -460,15 +472,15 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター★(n-1)✕３</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -477,7 +489,7 @@
         <div class="quest-seq">5</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">リオレウス★(n)</div>
           </div>
         </div>
@@ -489,11 +501,11 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -502,15 +514,15 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">森林のモンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -519,15 +531,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">リオレイア★5以上✕２</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -536,7 +548,7 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">リオレイア亜種★(n)</div>
           </div>
         </div>
@@ -545,7 +557,7 @@
         <div class="quest-seq">5</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">リオレウス亜種★(n)</div>
           </div>
         </div>
@@ -557,15 +569,15 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">骨塚✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター✕５</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -574,11 +586,11 @@
         <div class="quest-seq">2</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">ディアブロス✕２</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
         </div>
@@ -587,15 +599,15 @@
         <div class="quest-seq">3</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">大型モンスター★(n)✕３</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-hunt">討伐</div>
+            <div class="quest-type quest-hunt"></div>
             <div class="quest-content">モンスター✕１０</div>
           </div>
           <div class="quest-summary">
-            <div class="quest-type quest-matl">採集</div>
+            <div class="quest-type quest-matl"></div>
             <div class="quest-content">素材✕１０</div>
           </div>
         </div>
@@ -604,7 +616,7 @@
         <div class="quest-seq">4</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">ディアブロス亜種★(n)</div>
           </div>
         </div>
@@ -616,7 +628,7 @@
         <div class="quest-seq">1</div>
         <div class="quest-item">
           <div class="quest-summary">
-            <div class="quest-type quest-emg">緊急</div>
+            <div class="quest-type quest-emg"></div>
             <div class="quest-content">イビルジョー★(n)</div>
           </div>
         </div>
