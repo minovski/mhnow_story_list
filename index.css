@@ -41,11 +41,12 @@ h1 {
   font-weight: bold;
 }
 .quest-summary {
-  margin: .5rem 0 .5rem;
+  margin: .3rem 0 .3rem;
 }
 .quest-type {
   font-weight: bold;
-  border-radius: .1rem;
+  border-radius: .2rem;
+  padding: .1rem .3rem .1rem;
 }
 .quest-emg {
   color: white;
