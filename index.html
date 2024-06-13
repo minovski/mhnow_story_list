@@ -13,9 +13,69 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
   $(function() {
+    /* クエストタイプ */
     const emg = '緊急';
     const matl = '採集';
     const hunt = '討伐';
+    const chapters = [
+      '真夏の合宿',
+      'かわして討つべし',
+      '追跡訓練',
+      '搦め手の使い手',
+      '心技体',
+      '最後の試練'
+    ];
+    const quests = [
+      /* 真夏の合宿 */
+      [
+        { seq: 0, type: emg, target: 'バサルモス（★ｎ）', cnt: 1 }
+      ],
+      /* かわして討つべし */
+      [
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 5 },
+        { seq: 1, type: emg, target: 'ドスジャグラス（★ｎ）', cnt: 1 },
+        { seq: 2, type: hunt, target: '大型モンスター（★６）', cnt: 1 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 2, type: matl, target: '採集', cnt: 5 },
+        { seq: 3, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1 }
+      ],
+      /* 追跡訓練 */
+      [
+        { seq: 0, type: matl, target: '骨らしき漂流物（採集ポイント）', cnt: 5 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 1, type: matl, target: '採集', cnt: 5 },
+        { seq: 2, type: hunt, target: '大型モンスター（★６）', cnt: 3 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 2, type: matl, target: '採集', cnt: 5 },
+        { seq: 3, type: matl, target: '骨塚', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 3, type: matl, target: '採集', cnt: 5 },
+        { seq: 4, type: emg, target: 'ラドバルキン（★ｎ）', cnt: 1 }
+      ],
+      /* 搦め手の使い手 */
+      [
+        { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 10 },
+        { seq: 1, type: hunt, target: 'ドスギルオス', cnt: 2 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 1, type: matl, target: '採集', cnt: 10 },
+        { seq: 2, type: emg, target: 'プケプケ（★ｎ）', cnt: 1 },
+        { seq: 3, type: hunt, target: 'ボルボロス', cnt: 2 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 3, type: matl, target: '採集', cnt: 10 },
+        { seq: 4, type: emg, target: 'トビカガチ（★ｎ）', cnt: 1 }
+      ],
+      /* 心技体 */
+      [],
+      /* 最後の試練 */
+      []
+    ];
     $('#accordion').accordion({
       heightStyle: 'content'
     });
