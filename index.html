@@ -27,7 +27,11 @@
       '最後の試練',
       '宴の知らせ',
       '熱狂の会場',
-      '危険な水遊び'
+      '危険な水遊び',
+      '狙われたトラック',
+      'いざ会場へ',
+      'スペシャルゲスト',
+      '宴は誰のもの'
     ];
     /* クエストのリスト */
     const quests = [
@@ -149,8 +153,58 @@
         { seq: 2, type: matl, target: '採集', cnt: 12 },
         { seq: 3, type: hunt, target: '弱点属性武器使用', cnt: 5 },
         { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
-        { seq: 3, type: matl, target: 'モンスター', cnt: 12 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 4, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1 }
+      ],
+      /* 狙われたトラック */
+      [
+        { seq: 0, type: matl, target: '植物', cnt: 10 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: hunt, target: 'リオレイア（頭部位破壊）', cnt: 2 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: '大型モンスター（★７）', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1 }
+      ],
+      /* いざ会場へ */
+      [
+        { seq: 0, type: hunt, target: '沼地の大型モンスター', cnt: 5 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: 'フルフル（頭部位破壊）', cnt: 2 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: emg, target: 'レイギエナ（★ｎ）', cnt: 1 },
+        { seq: 3, type: hunt, target: 'ラドバルキン', cnt: 3 },
+        { seq: 3, type: hunt, target: '砂漠の大型モンスター', cnt: 5 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 4, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1 }
+      ],
+      /* スペシャルゲスト */
+      [
+        { seq: 0, type: hunt, target: 'バサルモス', cnt: 3 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: matl, target: '植物', cnt: 10 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: '大型モンスター（★ｎ）', cnt: 5 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'リオレウス（★ｎ）', cnt: 1 }
+      ],
+      /* 宴は誰のもの */
+      [
+        { seq: 0, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1 }
       ]
     ];
     // オブジェクトからHTMLを生成
