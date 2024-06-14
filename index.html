@@ -17,6 +17,7 @@
     const emg = '緊急';
     const matl = '採集';
     const hunt = '討伐';
+    /* チャプターのリスト */
     const chapters = [
       '真夏の合宿',
       'かわして討つべし',
@@ -25,8 +26,10 @@
       '心技体',
       '最後の試練',
       '宴の知らせ',
-      '熱狂の会場'
+      '熱狂の会場',
+      '危険な水遊び'
     ];
+    /* クエストのリスト */
     const quests = [
       /* 真夏の合宿 */
       [
@@ -132,10 +135,25 @@
         { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
         { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 4, type: emg, target: 'リオレイア亜種（★ｎ）', cnt: 1 }
+      ],
+      /* 危険な水遊び */
+      [
+        { seq: 0, type: hunt, target: 'プケプケ', cnt: 3 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: matl, target: '鉱脈', cnt: 10 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 12 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: hunt, target: '大型モンスター（★ｎ）', cnt: 12 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 3, type: matl, target: 'モンスター', cnt: 12 },
+        { seq: 4, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1 }
       ]
     ];
     // オブジェクトからHTMLを生成
-    $('#accordion').html('');
     for (let chapter_idx = 0; chapter_idx < chapters.length; ++chapter_idx ) {
       // チャプター見出しの追加
       const $title = $('<h3 />').append(`チャプター${chapter_idx + 1}：${chapters[chapter_idx]}`);
@@ -145,7 +163,7 @@
       const $chapter_list = $('<div />', {class: 'chapter-list'});
       $('#accordion').append($chapter_list);
 
-      // クエスト一覧の取得
+      // チャプターのクエスト一覧を取得
       const quest_list = quests[chapter_idx];
       console.log(quest_list);
 
@@ -175,7 +193,8 @@
           }
           $quest_summary.append($quest_type);
           $quest_summary.append($('<div />', {class: 'quest-content'}).append(`${quest_list[quest_idx].target}`));
-          $quest_summary.append($('<div />', { class: 'quest-cnt' }).append(`✕${quest_list[quest_idx].cnt}`));
+          const cnt_disp = (quest_list[quest_idx].cnt <= 1) ? '' : `✕${quest_list[quest_idx].cnt}`
+          $quest_summary.append($('<div />', { class: 'quest-cnt' }).append(cnt_disp));
           $quest_item.append($quest_summary);
         }
       }
