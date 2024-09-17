@@ -18,7 +18,7 @@
     const matl = '採集';
     const hunt = '討伐';
     /* チャプターのリスト */
-    const chapters = [
+    const chapters_season2 = [
       '真夏の合宿',
       'かわして討つべし',
       '追跡訓練',
@@ -33,8 +33,23 @@
       'スペシャルゲスト',
       '宴は誰のもの'
     ];
+    const chapters_season3 = [
+      '巡るひととせ',
+      'ナイショの計画',
+      'ステキな贈り物',
+      'イチバンのご馳走',
+      'とっておきの会場',
+      '紫煙ゆらめいて',
+      '二度あることは…',
+      '忘れ得ぬ姿',
+      '謎の脅威',
+      '鬼火灯りて',
+      '',
+      '',
+      ''
+    ];
     /* クエストのリスト */
-    const quests = [
+    const quests_season2 = [
       /* 真夏の合宿 */
       [
         { seq: 0, type: emg, target: 'バサルモス（★ｎ）', cnt: 1 }
@@ -207,10 +222,131 @@
         { seq: 0, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1 }
       ]
     ];
+    const quests_season3 = [
+      /* 巡るひととせ */
+      [
+        { seq: 0, type: emg, target: 'アケノシルム（★ｎ）', cnt: 1 }
+      ],
+      /* ナイショの計画 */
+      [
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 5 },
+        { seq: 1, type: emg, target: 'プケプケ（★ｎ）', cnt: 1 },
+        { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 1 },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 2, type: matl, target: '採集', cnt: 5 },
+        { seq: 3, type: emg, target: 'ドスギルオス（★ｎ）', cnt: 1 }
+      ],
+      /* ステキな贈り物 */
+      [
+        { seq: 0, type: hunt, target: 'クルルヤック', cnt: 2 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 5 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 5 },
+        { seq: 1, type: matl, target: '採集', cnt: 5 },
+        { seq: 2, type: hunt, target: '砂漠のモンスター', cnt: 3 },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 3 },
+        { seq: 2, type: matl, target: '採集', cnt: 5 },
+        { seq: 3, type: emg, target: 'バサルモス（★ｎ）', cnt: 1 }
+      ],
+      /* イチバンのご馳走 */
+      [
+        { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 3 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 10 },
+        { seq: 1, type: emg, target: 'パオウルムー（★ｎ）', cnt: 1 },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 2, type: matl, target: '採集', cnt: 10 },
+        { seq: 3, type: matl, target: '鉱脈', cnt: 10 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 3, type: matl, target: '採集', cnt: 10 },
+        { seq: 4, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1 }
+      ],
+      /* とっておきの会場 */
+      [
+        { seq: 0, type: matl, target: '見慣れぬ漂流物（採集ポイント）', cnt: 10 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 10 },
+        { seq: 1, type: emg, target: 'バフバロ（★ｎ）', cnt: 1 },
+        { seq: 2, type: hunt, target: 'アケノシルム', cnt: 2 },
+        { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 3 },
+        { seq: 2, type: matl, target: '採集', cnt: 10 },
+        { seq: 3, type: hunt, target: '森林のモンスター', cnt: 5 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 3, type: matl, target: '採集', cnt: 10 },
+        { seq: 4, type: emg, target: 'リオレイア（★ｎ）', cnt: 1 }
+      ],
+      /* 紫煙ゆらめいて */
+      [
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 10 },
+        { seq: 1, type: emg, target: 'オドガロン（★ｎ）', cnt: 1 },
+        { seq: 2, type: hunt, target: '沼地のモンスター', cnt: 5 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 2, type: matl, target: '採集', cnt: 10 },
+        { seq: 3, type: matl, target: '骨塚', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 4, type: emg, target: 'ラドバルキン（★ｎ）', cnt: 1 }
+      ],
+      /* 二度あることは… */
+      [
+        { seq: 0, type: hunt, target: '（謎）', cnt: 1 },
+        { seq: 1, type: hunt, target: '沼地の大型モンスター', cnt: 3 },
+        { seq: 1, type: hunt, target: '砂漠の大型モンスター', cnt: 3 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
+        { seq: 2, type: emg, target: 'リオレイア亜種（★ｎ）', cnt: 1 },
+        { seq: 3, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1 },
+        { seq: 4, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1 }
+      ],
+      /* 忘れ得ぬ姿 */
+      [
+        { seq: 0, type: matl, target: '植物', cnt: 5 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: 'トビカガチ（頭部位破壊）', cnt: 2 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 4, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1 }
+      ],
+      /* 謎の脅威 */
+      [
+        { seq: 0, type: hunt, target: 'ラドバルキン', cnt: 3 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: matl, target: '鉱脈', cnt: 10 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: emg, target: 'フルフル（★ｎ）', cnt: 1 },
+        { seq: 3, type: hunt, target: '砂漠の大型モンスター', cnt: 5 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'パオウルムー亜種（★ｎ）', cnt: 1 }
+      ],
+      /* 鬼火灯りて */
+      [
+        { seq: 0, type: hunt, target: 'レイギエナ（頭部位破壊）', cnt: 2 },
+        { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+      ],
+      [],
+      [],
+      []
+    ];
     // オブジェクトからHTMLを生成
-    for (let chapter_idx = 0; chapter_idx < chapters.length; ++chapter_idx ) {
+    for (let chapter_idx = 0; chapter_idx < chapters_season3.length; ++chapter_idx ) {
       // チャプター見出しの追加
-      const $title = $('<h3 />').append(`チャプター${chapter_idx + 1}：${chapters[chapter_idx]}`);
+      const $title = $('<h3 />').append(`チャプター${chapter_idx + 1}：${chapters_season3[chapter_idx]}`);
       $('#accordion').append($title);
 
       // クエストリストのベースを追加
@@ -218,7 +354,7 @@
       $('#accordion').append($chapter_list);
 
       // チャプターのクエスト一覧を取得
-      const quest_list = quests[chapter_idx];
+      const quest_list = quests_season3[chapter_idx];
       console.log(quest_list);
 
       for (let quest_idx = 0, $quest_item = null; quest_idx < quest_list.length; ++quest_idx) {
