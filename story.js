@@ -211,7 +211,7 @@ $(function() {
   const quests_season3 = [
     /* 巡るひととせ */
     [
-      { seq: 0, type: emg, target: 'アケノシルム（★ｎ）', cnt: 1, subtitle: '' }
+      { seq: 0, type: emg, target: 'アケノシルム（★ｎ）', cnt: 1, subtitle: '火を吹く唐傘' }
     ],
     /* ナイショの計画 */
     [
