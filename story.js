@@ -31,8 +31,8 @@ $(function() {
     '謎の脅威',
     '鬼火灯りて',
     'パーティーの準備',
-    '',
-    ''
+    '新奇なすき間',
+    '闘雷招来'
   ];
   /* クエストのリスト */
   const quests_season2 = [
@@ -211,18 +211,18 @@ $(function() {
   const quests_season3 = [
     /* 巡るひととせ */
     [
-      { seq: 0, type: emg, target: 'アケノシルム（★ｎ）', cnt: 1 }
+      { seq: 0, type: emg, target: 'アケノシルム（★ｎ）', cnt: 1, subtitle: '' }
     ],
     /* ナイショの計画 */
     [
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 3 },
       { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
       { seq: 0, type: matl, target: '採集', cnt: 5 },
-      { seq: 1, type: emg, target: 'プケプケ（★ｎ）', cnt: 1 },
+      { seq: 1, type: emg, target: 'プケプケ（★ｎ）', cnt: 1, subtitle: 'ヤブから毒妖鳥' },
       { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 1 },
       { seq: 2, type: hunt, target: '大型モンスター', cnt: 3 },
       { seq: 2, type: matl, target: '採集', cnt: 5 },
-      { seq: 3, type: emg, target: 'ドスギルオス（★ｎ）', cnt: 1 }
+      { seq: 3, type: emg, target: 'ドスギルオス（★ｎ）', cnt: 1, subtitle: '痺れるほど刺激的' }
     ],
     /* ステキな贈り物 */
     [
@@ -235,59 +235,61 @@ $(function() {
       { seq: 2, type: hunt, target: '砂漠のモンスター', cnt: 3 },
       { seq: 2, type: hunt, target: '大型モンスター', cnt: 3 },
       { seq: 2, type: matl, target: '採集', cnt: 5 },
-      { seq: 3, type: emg, target: 'バサルモス（★ｎ）', cnt: 1 }
+      { seq: 3, type: emg, target: 'バサルモス（★ｎ）', cnt: 1, subtitle: '路傍の岩竜' }
     ],
     /* イチバンのご馳走 */
     [
       { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 3 },
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 0, type: matl, target: '採集', cnt: 10 },
-      { seq: 1, type: emg, target: 'パオウルムー（★ｎ）', cnt: 1 },
+      { seq: 1, type: emg, target: 'パオウルムー（★ｎ）', cnt: 1, subtitle: '綿菓子みたいなあいつ' },
       { seq: 2, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 2, type: matl, target: '採集', cnt: 10 },
       { seq: 3, type: matl, target: '鉱脈', cnt: 10 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 3, type: matl, target: '採集', cnt: 10 },
-      { seq: 4, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1, subtitle: '迷惑な光' }
     ],
     /* とっておきの会場 */
     [
       { seq: 0, type: matl, target: '見慣れぬ漂流物（採集ポイント）', cnt: 10 },
       { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 0, type: matl, target: '採集', cnt: 10 },
-      { seq: 1, type: emg, target: 'バフバロ（★ｎ）', cnt: 1 },
+      { seq: 1, type: emg, target: 'バフバロ（★ｎ）', cnt: 1, subtitle: '猛進するもの' },
       { seq: 2, type: hunt, target: 'アケノシルム', cnt: 2 },
       { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 3 },
       { seq: 2, type: matl, target: '採集', cnt: 10 },
       { seq: 3, type: hunt, target: '森林のモンスター', cnt: 5 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 3, type: matl, target: '採集', cnt: 10 },
-      { seq: 4, type: emg, target: 'リオレイア（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'リオレイア（★ｎ）', cnt: 1, subtitle: '女王の睥睨' }
     ],
     /* 紫煙ゆらめいて */
     [
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 0, type: matl, target: '採集', cnt: 10 },
-      { seq: 1, type: emg, target: 'オドガロン（★ｎ）', cnt: 1 },
+      { seq: 1, type: emg, target: 'オドガロン（★ｎ）', cnt: 1, subtitle: '飛び掛かる惨爪' },
       { seq: 2, type: hunt, target: '沼地のモンスター', cnt: 5 },
       { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 2, type: matl, target: '採集', cnt: 10 },
       { seq: 3, type: matl, target: '骨塚', cnt: 5 },
       { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
-      { seq: 4, type: emg, target: 'ラドバルキン（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'ラドバルキン（★ｎ）', cnt: 1, subtitle: 'トゲトゲパニック' }
     ],
     /* 二度あることは… */
     [
-      { seq: 0, type: hunt, target: '（謎）', cnt: 1 },
+      { seq: 0, type: hunt, target: 'リオレイア', cnt: 2 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 0, type: matl, target: '採集', cnt: 10 },
       { seq: 1, type: hunt, target: '沼地の大型モンスター', cnt: 3 },
       { seq: 1, type: hunt, target: '砂漠の大型モンスター', cnt: 3 },
       { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
-      { seq: 2, type: emg, target: 'リオレイア亜種（★ｎ）', cnt: 1 },
-      { seq: 3, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1 },
-      { seq: 4, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1 }
+      { seq: 2, type: emg, target: 'リオレイア亜種（★ｎ）', cnt: 1, subtitle: 'さきがけの桜花' },
+      { seq: 3, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1, subtitle: 'つづく黒き双角' },
+      { seq: 4, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1, subtitle: '立ちはだかる蒼炎' }
     ],
     /* 忘れ得ぬ姿 */
     [
@@ -303,7 +305,7 @@ $(function() {
       { seq: 3, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
       { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
-      { seq: 4, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1, subtitle: 'まといしは蒼雷' }
     ],
     /* 謎の脅威 */
     [
@@ -313,11 +315,11 @@ $(function() {
       { seq: 1, type: matl, target: '鉱脈', cnt: 10 },
       { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
       { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
-      { seq: 2, type: emg, target: 'フルフル（★ｎ）', cnt: 1 },
+      { seq: 2, type: emg, target: 'フルフル（★ｎ）', cnt: 1, subtitle: '不穏な白' },
       { seq: 3, type: hunt, target: '砂漠の大型モンスター', cnt: 5 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
       { seq: 3, type: matl, target: '採集', cnt: 12 },
-      { seq: 4, type: emg, target: 'パオウルムー亜種（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'パオウルムー亜種（★ｎ）', cnt: 1, subtitle: '黒きまどろみ' }
     ],
     /* 鬼火灯りて */
     [
@@ -333,16 +335,41 @@ $(function() {
       { seq: 3, type: matl, target: '鬼火の爆破跡（植物）', cnt: 10 },
       { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
       { seq: 3, type: matl, target: '採集', cnt: 12 },
-      { seq: 4, type: emg, target: 'マガイマガド（★ｎ）', cnt: 1 }
+      { seq: 4, type: emg, target: 'マガイマガド（★ｎ）', cnt: 1, subtitle: '紫煙まとう鎧武者' }
     ],
     /* パーティーの準備 */
     [
       { seq: 0, type: matl, target: '鉱脈', cnt: 10 },
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
       { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+      { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 1, type: matl, target: '採集', cnt: 12 },
+      { seq: 2, type: hunt, target: 'オドガロン', cnt: 3 },
+      { seq: 2, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+      { seq: 2, type: hunt, target: '沼地の大型モンスター', cnt: 5 },
+      { seq: 3, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1, subtitle: '無粋なお客人' }
     ],
-    [],
-    []
+    /* 新奇なすき間 */
+    [
+      { seq: 0, type: hunt, target: 'マガイマガド', cnt: 3 },
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: matl, target: '植物', cnt: 10 },
+      { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 2, type: hunt, target: '大型モンスター（★ｎ）', cnt: 5 },
+      { seq: 2, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+      { seq: 2, type: matl, target: '採集', cnt: 12 },
+      { seq: 3, type: hunt, target: 'イビルジョー', cnt: 2 },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 3, type: matl, target: '採集', cnt: 12 },
+      { seq: 4, type: emg, target: 'タマミツネ（★ｎ）', cnt: 1, subtitle: '妖しき泡' }
+    ],
+    /* 闘雷招来 */
+    [
+      { seq: 0, type: emg, target: 'ラージャン（★ｎ）', cnt: 1, subtitle: '荒ぶる金獅子' }
+    ]
   ];
   // オブジェクトからHTMLを生成
   for (let chapter_idx = 0; chapter_idx < chapters_season3.length; ++chapter_idx ) {
@@ -381,9 +408,13 @@ $(function() {
           case matl:
             $quest_type.addClass('quest-matl');
             break;
+          default:
+            $quest_type.addClass('quest-else');
+            break;
         }
         $quest_summary.append($quest_type);
-        $quest_summary.append($('<div />', {class: 'quest-content'}).append(`${quest_list[quest_idx].target}`));
+        const subtitle = (quest_list[quest_idx].subtitle === undefined) ? '' : `【${quest_list[quest_idx].subtitle}】`;
+        $quest_summary.append($('<div />', {class: 'quest-content'}).append(subtitle, `${quest_list[quest_idx].target}`));
         const cnt_disp = (quest_list[quest_idx].cnt <= 1) ? '' : `✕${quest_list[quest_idx].cnt}`
         $quest_summary.append($('<div />', { class: 'quest-cnt' }).append(cnt_disp));
         $quest_item.append($quest_summary);
