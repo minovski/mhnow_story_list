@@ -34,6 +34,13 @@ $(function() {
     '新奇なすき間',
     '闘雷招来'
   ];
+  const chapters_season4 = [
+    '白い来訪者',
+    '未踏の雪原',
+    'ニオイの行方',
+    '行く先を照らすもの',
+    'おどろなる声',
+  ];
   /* クエストのリスト */
   const quests_season2 = [
     /* 真夏の合宿 */
@@ -371,10 +378,57 @@ $(function() {
       { seq: 0, type: emg, target: 'ラージャン（★ｎ）', cnt: 1, subtitle: '荒ぶる金獅子' }
     ]
   ];
+  const quests_season4 = [
+    /* 白い来訪者 */
+    [
+      { seq: 0, type: emg, target: 'ウルクスス（★ｎ）', cnt: 1, subtitle: '白き滑走者' }
+    ],
+    /* 未踏の雪原 */
+    [
+      { seq: 0, type: hunt, target: '雪原のモンスター', cnt: 5 },
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 3 },
+      { seq: 0, type: matl, target: '採集', cnt: 5 },
+      { seq: 1, type: hunt, target: '大型モンスター', cnt: 3 },
+      { seq: 1, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 1, type: matl, target: '採集', cnt: 5 },
+      { seq: 2, type: emg, target: 'バフバロ（★ｎ）', cnt: 1, subtitle: '雪色の巨影' }
+    ],
+    /* ニオイの行方 */
+    [
+      { seq: 0, type: matl, target: '不快な粘液（鉱脈）', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 0, type: matl, target: '採集', cnt: 5 },
+      { seq: 1, type: hunt, target: 'ボルボロス', cnt: 2 },
+      { seq: 1, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 1, type: matl, target: '採集', cnt: 5 },
+      { seq: 2, type: emg, target: 'ドスギルオス（★ｎ）', cnt: 1, subtitle: '沼地の凶牙' },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 3 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 3, type: matl, target: '採集', cnt: 5 },
+      { seq: 4, type: emg, target: 'ラングロトラ（★ｎ）', cnt: 1, subtitle: '砂漠の赤い弾丸' }
+    ],
+    /* 行く先を照らすもの */
+    [
+      { seq: 0, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 5 },
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 0, type: matl, target: '採集', cnt: 10 },
+      { seq: 1, type: emg, target: 'アンジャナフ（★ｎ）', cnt: 1, subtitle: '樹々焦がす蛮炎' },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 3 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 3, type: matl, target: '採集', cnt: 5 },
+      { seq: 4, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1, subtitle: '砂漠のフラッシュライト' }
+    ],
+    /* おどろなる声 */
+    [
+      { seq: 0, type: matl, target: '骨塚', cnt: 5 },
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+    ]
+  ];
   // オブジェクトからHTMLを生成
-  for (let chapter_idx = 0; chapter_idx < chapters_season3.length; ++chapter_idx ) {
+  for (let chapter_idx = 0; chapter_idx < chapters_season4.length; ++chapter_idx ) {
     // チャプター見出しの追加
-    const $title = $('<h3 />').append(`チャプター${chapter_idx + 1}：${chapters_season3[chapter_idx]}`);
+    const $title = $('<h3 />').append(`チャプター${chapter_idx + 1}：${chapters_season4[chapter_idx]}`);
     $('#accordion').append($title);
 
     // クエストリストのベースを追加
@@ -382,7 +436,7 @@ $(function() {
     $('#accordion').append($chapter_list);
 
     // チャプターのクエスト一覧を取得
-    const quest_list = quests_season3[chapter_idx];
+    const quest_list = quests_season4[chapter_idx];
     console.log(quest_list);
 
     for (let quest_idx = 0, $quest_item = null; quest_idx < quest_list.length; ++quest_idx) {
