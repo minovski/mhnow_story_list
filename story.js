@@ -413,16 +413,20 @@ $(function() {
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 0, type: matl, target: '採集', cnt: 10 },
       { seq: 1, type: emg, target: 'アンジャナフ（★ｎ）', cnt: 1, subtitle: '樹々焦がす蛮炎' },
-      { seq: 3, type: hunt, target: '大型モンスター', cnt: 3 },
-      { seq: 3, type: hunt, target: 'モンスター', cnt: 5 },
-      { seq: 3, type: matl, target: '採集', cnt: 5 },
-      { seq: 4, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1, subtitle: '砂漠のフラッシュライト' }
+      { seq: 2, type: hunt, target: '大型モンスター', cnt: 3 },
+      { seq: 2, type: hunt, target: 'モンスター', cnt: 5 },
+      { seq: 2, type: matl, target: '採集', cnt: 5 },
+      { seq: 3, type: emg, target: 'ツィツィヤック（★ｎ）', cnt: 1, subtitle: '砂漠のフラッシュライト' }
     ],
     /* おどろなる声 */
     [
       { seq: 0, type: matl, target: '骨塚', cnt: 5 },
       { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 1, type: hunt, target: '弱点属性武器使用', cnt: 3 },
+      { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 1, type: matl, target: '採集', cnt: 10 },
+      { seq: 2, type: emg, target: '??????（★ｎ）', cnt: 1, subtitle: '??????' },
     ]
   ];
   // オブジェクトからHTMLを生成
