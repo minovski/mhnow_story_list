@@ -426,7 +426,11 @@ $(function() {
       { seq: 1, type: hunt, target: '弱点属性武器使用', cnt: 3 },
       { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 1, type: matl, target: '採集', cnt: 10 },
-      { seq: 2, type: emg, target: '??????（★ｎ）', cnt: 1, subtitle: '??????' },
+      { seq: 2, type: emg, target: 'バサルモス（★ｎ）', cnt: 1, subtitle: '立ち塞がりし巌' },
+      { seq: 3, type: hunt, target: '沼地のモンスター', cnt: 5 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 3, type: matl, target: '採集', cnt: 10 },
+      { seq: 4, type: emg, target: '????????（★ｎ）', cnt: 1, subtitle: '????????' }
     ]
   ];
   // オブジェクトからHTMLを生成
