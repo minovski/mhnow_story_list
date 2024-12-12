@@ -40,6 +40,8 @@ $(function() {
     'ニオイの行方',
     '行く先を照らすもの',
     'おどろなる声',
+    'まどろみの唄',
+    'トゲとツノにご用心',
   ];
   /* クエストのリスト */
   const quests_season2 = [
@@ -430,8 +432,33 @@ $(function() {
       { seq: 3, type: hunt, target: '沼地のモンスター', cnt: 5 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 3, type: matl, target: '採集', cnt: 10 },
-      { seq: 4, type: emg, target: '????????（★ｎ）', cnt: 1, subtitle: '????????' }
-    ]
+      { seq: 4, type: emg, target: 'オドガロン（★ｎ）', cnt: 1, subtitle: '暗き沼に巣食うもの' }
+    ],
+    /* まどろみの唄' */
+    [
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 0, type: matl, target: '採集', cnt: 10 },
+      { seq: 1, type: emg, target: 'パオウルムー亜種（★ｎ）', cnt: 1, subtitle: '眠れる砂漠' },
+      { seq: 2, type: hunt, target: 'ウルクスス', cnt: 2 },
+      { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 2, type: matl, target: '採集', cnt: 10 },
+      { seq: 3, type: matl, target: '仄かに光る棘', cnt: 10 },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 4, type: emg, target: 'イソネミクニ（★ｎ）', cnt: 1, subtitle: '隠り世いざなう歌声' }
+    ],
+    /* トゲとツノにご用心 */
+    [
+      { seq: 0, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 0, type: matl, target: '採集', cnt: 10 },
+      { seq: 1, type: emg, target: 'ラドバルキン（★ｎ）', cnt: 1, subtitle: '荒野の大回転' },
+      { seq: 2, type: hunt, target: '砂漠の大型モンスター', cnt: 3 },
+      { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 2, type: matl, target: '採集', cnt: 10 },
+
+    ],
   ];
   // オブジェクトからHTMLを生成
   for (let chapter_idx = 0; chapter_idx < chapters_season4.length; ++chapter_idx ) {
