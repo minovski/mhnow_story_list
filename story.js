@@ -42,6 +42,8 @@ $(function() {
     'おどろなる声',
     'まどろみの唄',
     'トゲとツノにご用心',
+    'あやしき紫煙',
+    '残された噛み跡',
   ];
   /* クエストのリスト */
   const quests_season2 = [
@@ -457,7 +459,33 @@ $(function() {
       { seq: 2, type: hunt, target: '砂漠の大型モンスター', cnt: 3 },
       { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
       { seq: 2, type: matl, target: '採集', cnt: 10 },
-
+      { seq: 3, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 3, type: matl, target: '採集', cnt: 10 },
+      { seq: 4, type: emg, target: 'ディアブロス（★ｎ）', cnt: 1, subtitle: '角竜は砂煙とともに' }
+    ],
+    /* あやしき紫煙 */
+    [
+      { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+      { seq: 0, type: hunt, target: 'フルフル（頭部位破壊）', cnt: 2 },
+      { seq: 0, type: matl, target: '採集', cnt: 10 },
+      { seq: 1, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 1, type: matl, target: '採集', cnt: 10 },
+      { seq: 2, type: emg, target: 'リオレイア亜種（★ｎ）', cnt: 1, subtitle: '棘ある桜花' },
+      { seq: 3, type: matl, target: '植物', cnt: 5 },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 5 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
+      { seq: 4, type: emg, target: 'マガイマガド（★ｎ）', cnt: 1, subtitle: '紫怨に燃ゆ' }
+    ],
+    /* 残された噛み跡 */
+    [
+      { seq: 0, type: matl, target: '背筋の凍る噛み跡', cnt: 5 },
+      { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: hunt, target: 'イソネミクニ', cnt: 2 },
+      { seq: 1, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+      { seq: 1, type: matl, target: '採集', cnt: 12 },
     ],
   ];
   // オブジェクトからHTMLを生成
