@@ -44,6 +44,8 @@ $(function() {
     'トゲとツノにご用心',
     'あやしき紫煙',
     '残された噛み跡',
+    '寂しい背中',
+    '蒼と碧',
   ];
   /* クエストのリスト */
   const quests_season2 = [
@@ -467,7 +469,7 @@ $(function() {
     /* あやしき紫煙 */
     [
       { seq: 0, type: hunt, target: '弱点属性武器使用', cnt: 5 },
-      { seq: 0, type: hunt, target: 'フルフル（頭部位破壊）', cnt: 2 },
+      { seq: 0, type: hunt, target: 'プケプケ（頭部位破壊）', cnt: 2 },
       { seq: 0, type: matl, target: '採集', cnt: 10 },
       { seq: 1, type: hunt, target: '大型モンスター', cnt: 5 },
       { seq: 1, type: hunt, target: 'モンスター', cnt: 10 },
@@ -486,6 +488,39 @@ $(function() {
       { seq: 1, type: hunt, target: 'イソネミクニ', cnt: 2 },
       { seq: 1, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
       { seq: 1, type: matl, target: '採集', cnt: 12 },
+      { seq: 2, type: emg, target: 'フルフル（★ｎ）', cnt: 1, subtitle: '雪の如き柔肌' },
+      { seq: 3, type: hunt, target: '雪原の大型モンスター', cnt: 5 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 3, type: matl, target: '採集', cnt: 12 },
+      { seq: 4, type: emg, target: 'ベリオロス（★ｎ）', cnt: 1, subtitle: '牙持つ凍て風' }
+    ],
+    /* 寂しい背中 */
+    [
+      { seq: 0, type: hunt, target: 'ジュラトドス', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1, subtitle: '沼地のスプラッシュ' },
+      { seq: 2, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 2, type: matl, target: '採集', cnt: 12 },
+      { seq: 3, type: matl, target: '鉱脈', cnt: 10 },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 4, type: emg, target: 'タマミツネ（★ｎ）', cnt: 1, subtitle: '泥沼彩る泡' }
+    ],
+    /* 蒼と碧 */
+    [
+      { seq: 0, type: hunt, target: 'アンジャナフ（頭部位破壊）', cnt: 2 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: hunt, target: '大型モンスター（★ｎ－１）', cnt: 5 },
+      { seq: 1, type: hunt, target: '弱点属性武器使用', cnt: 5 },
+      { seq: 1, type: matl, target: '採集', cnt: 12 },
+      { seq: 2, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1, subtitle: '蒼穹を舞うもの' },
+      { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+      { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 3, type: matl, target: '採集', cnt: 12 },
+      { seq: 4, type: emg, target: '？？？？（★ｎ）', cnt: 1, subtitle: '？？？？' }
     ],
   ];
   // オブジェクトからHTMLを生成
