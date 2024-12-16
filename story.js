@@ -46,6 +46,7 @@ $(function() {
     '残された噛み跡',
     '寂しい背中',
     '蒼と碧',
+    '砂漠の無法者たち',
   ];
   /* クエストのリスト */
   const quests_season2 = [
@@ -520,7 +521,17 @@ $(function() {
       { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
       { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
       { seq: 3, type: matl, target: '採集', cnt: 12 },
-      { seq: 4, type: emg, target: '？？？？（★ｎ）', cnt: 1, subtitle: '？？？？' }
+      { seq: 4, type: emg, target: 'ジンオウガ（★ｎ）', cnt: 1, subtitle: '碧雷をまといしもの' }
+    ],
+    /* 砂漠の無法者たち */
+    [
+      { seq: 0, type: hunt, target: '大型モンスター（★ｎ）', cnt: 5 },
+      { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 0, type: matl, target: '採集', cnt: 12 },
+      { seq: 1, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1, subtitle: '角持つ黒き死神' },
+      { seq: 2, type: matl, target: '骨塚', cnt: 10 },
+      { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+      { seq: 2, type: matl, target: '採集', cnt: 12 },
     ],
   ];
   // オブジェクトからHTMLを生成
