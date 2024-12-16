@@ -141,7 +141,7 @@ const season4_story = {
     {
       title: '寂しい背中',
       quest_list: [
-        { seq: 0, type: hunt, target: 'ジュラトドス', cnt: 5 },
+        { seq: 0, type: hunt, target: 'ジュラトドス', cnt: 2 },
         { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 0, type: matl, target: '採集', cnt: 12 },
         { seq: 1, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1, subtitle: '沼地のスプラッシュ' },
@@ -182,7 +182,18 @@ const season4_story = {
         { seq: 2, type: matl, target: '骨塚', cnt: 10 },
         { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: 'ベリオロス', cnt: 2 },
+        { seq: 3, type: hunt, target: 'リオレウス', cnt: 2 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'ラージャン（★ｎ）', cnt: 1, subtitle: '破壊の暴雷' }
       ]
     },
+    /* 轟きより遠く */
+    {
+      title: '轟きより遠く',
+      quest_list: [
+        { seq: 0, type: emg, target: 'ティガレックス（★ｎ）', cnt: 1, subtitle: '雪原に轟く咆哮' }
+      ]
+    }
   ]
 }
