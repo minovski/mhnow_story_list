@@ -1,4 +1,4 @@
-const season4_story = {
+const season_story = {
   title: '銀雪のランページ',
   chapter_list: [
     /* 白い来訪者 */

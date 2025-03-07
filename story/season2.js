@@ -1,4 +1,4 @@
-const season2_story = {
+const season_story = {
   title: '嵐が誘う泡沫の宴',
   chapter_list: [
     /* 真夏の合宿 */

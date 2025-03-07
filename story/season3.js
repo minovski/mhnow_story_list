@@ -1,4 +1,4 @@
-const season3_story = {
+const season_story = {
   title: '十六夜に揺らぐ鬼火',
   chapter_list: [
     /* 巡るひととせ */

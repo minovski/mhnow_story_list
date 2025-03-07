@@ -1,6 +1,6 @@
 $(function() {
   // ストーリーを定義したオブジェクトからHTMLを生成
-  const story = season4_story;
+  const story = season_story;
 
   $('#story_title').text(story.title);
   for (let chapter_idx = 0; chapter_idx < story.chapter_list.length; ++chapter_idx ) {
