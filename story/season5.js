@@ -94,6 +94,50 @@ const season_story = {
         { seq: 0, type: hunt, target: '砂漠の大型モンスター', cnt: 5 },
         { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: hunt, target: '骨塚', cnt: 10 },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: 'クルルヤック（頭部位破壊）', cnt: 2 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'ディアブロス（★ｎ）', cnt: 1, subtitle: '突撃の迷惑客' }
+      ]
+    },
+    {
+      title: '迷惑なお客様',
+      quest_list: [
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: '大型モンスター（★ｎ－１以上）', cnt: 5 },
+        { seq: 1, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: hunt, target: '鉱脈', cnt: 10 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: 'レイギエナ', cnt: 2 },
+        { seq: 3, type: hunt, target: 'ベリオロス', cnt: 2 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'プケプケ亜種（★ｎ）', cnt: 1, subtitle: '営業妨害お断り' }
+      ]
+    },
+    {
+      title: 'クアリリ宅配便',
+      quest_list: [
+        { seq: 0, type: hunt, target: '森林の大型モンスター', cnt: 5 },
+        { seq: 0, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: 'リオレウス', cnt: 2 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: emg, target: 'リオレウス亜種（★ｎ）', cnt: 1, subtitle: '蒼炎をかいくぐれ' },
+        { seq: 3, type: hunt, target: '大型モンスター（弱点属性武器）', cnt: 2 },
+        { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'タマミツネ（★ｎ）', cnt: 1, subtitle: '泡々スリップ' }
       ]
     },
   ]
