@@ -44,7 +44,7 @@ const season_story = {
         { seq: 2, type: hunt, target: '雪原のモンスター', cnt: 5 },
         { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
         { seq: 2, type: matl, target: '採集', cnt: 10 },
-        { seq: 3, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 5 },
+        { seq: 3, type: hunt, target: '大型モンスター（★ｎ－２以上）', cnt: 5 },
         { seq: 3, type: hunt, target: 'モンスター', cnt: 10 },
         { seq: 3, type: matl, target: '採集', cnt: 10 },
         { seq: 4, type: emg, target: 'ベリオロス（★ｎ）', cnt: 1, subtitle: '立ち塞がる氷牙竜' }
@@ -72,8 +72,8 @@ const season_story = {
         { seq: 0, type: hunt, target: '大型モンスター', cnt: 5 },
         { seq: 0, type: hunt, target: 'モンスター', cnt: 10 },
         { seq: 0, type: matl, target: '採集', cnt: 10 },
-        { seq: 1, type: emg, target: 'ふるふる（★ｎ）', cnt: 1, subtitle: '柔肌の持ち主' },
-        { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２）', cnt: 5 },
+        { seq: 1, type: emg, target: 'フルフル（★ｎ）', cnt: 1, subtitle: '柔肌の持ち主' },
+        { seq: 2, type: hunt, target: '大型モンスター（★ｎ－２以上）', cnt: 5 },
         { seq: 2, type: hunt, target: 'モンスター', cnt: 10 },
         { seq: 2, type: matl, target: '採集', cnt: 10 },
         { seq: 3, type: hunt, target: 'アケノシルム', cnt: 2 },
@@ -138,6 +138,44 @@ const season_story = {
         { seq: 3, type: hunt, target: 'モンスター', cnt: 12 },
         { seq: 3, type: matl, target: '採集', cnt: 12 },
         { seq: 4, type: emg, target: 'タマミツネ（★ｎ）', cnt: 1, subtitle: '泡々スリップ' }
+      ]
+    },
+    {
+      title: '危険物注意',
+      quest_list: [
+        { seq: 0, type: hunt, target: '大型モンスター（★ｎ－１以上）', cnt: 5 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: emg, target: 'ティガレックス（★ｎ）', cnt: 1, subtitle: 'ドリフトの轟き' },
+        { seq: 2, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 2, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 2, type: matl, target: '採集', cnt: 12 },
+        { seq: 3, type: hunt, target: 'リオレイア（頭部位破壊）', cnt: 2 },
+        { seq: 3, type: hunt, target: '大型モンスター（弱点属性武器）', cnt: 5 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'マガイマガド（★ｎ）', cnt: 1, subtitle: '鬼火厳禁' }
+      ]
+    },
+    {
+      title: '波乱の建設現場',
+      quest_list: [
+        { seq: 0, type: matl, target: '巨大な斬り跡（骨塚）', cnt: 10 },
+        { seq: 0, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 0, type: matl, target: '採集', cnt: 12 },
+        { seq: 1, type: hunt, target: '大型モンスター（★ｎ）', cnt: 5 },
+        { seq: 1, type: hunt, target: 'モンスター', cnt: 12 },
+        { seq: 1, type: matl, target: '採集', cnt: 12 },
+        { seq: 2, type: emg, target: 'ラージャン（★ｎ）', cnt: 1, subtitle: '破壊の化身' },
+        { seq: 3, type: hunt, target: 'バゼルギウス', cnt: 1},
+        { seq: 3, type: hunt, target: '大型モンスター', cnt: 10 },
+        { seq: 3, type: matl, target: '採集', cnt: 12 },
+        { seq: 4, type: emg, target: 'ディアブロス亜種（★ｎ）', cnt: 1, subtitle: '壁を貫く黒角' }
+      ]
+    },
+    {
+      title: '岩を薙ぐ刀',
+      quest_list: [
+        { seq: 0, type: emg, target: 'ディノバルド（★ｎ）', cnt: 1, subtitle: '研ぎ澄ます剣尾' }
       ]
     },
   ]
